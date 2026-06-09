@@ -1,1 +1,6 @@
 # People-Counter-RPi-Arduino
+This project is a real-time people counting system developed using Raspberry Pi, YOLOv8 object detection, ByteTrack tracking, Arduino UNO, and P10 LED display panels.
+The system uses a USB camera connected to the Raspberry Pi to capture live video. The Raspberry Pi processes the video frames using OpenCV and detects people using the YOLOv8 model. ByteTrack is used to track each detected person and assign a unique tracking ID.
+A counting line is placed in the video frame. When a person crosses the line in one direction, the IN count is increased. When a person crosses the line in the opposite direction, the OUT count is increased. Based on this, the system calculates the total number of people inside.
+Whenever the total count changes, the Raspberry Pi sends the updated count value to the Arduino UNO through USB serial communication using the Arduino USB port. The Arduino receives this count and displays the date, time, and total people count on three P10 LED display panels.
+This project demonstrates the integration of computer vision, object tracking, Raspberry Pi, Arduino, serial communication, and LED display interfacing for real-time occupancy monitoring.
