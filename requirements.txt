@@ -1,4 +1,3 @@
-opencv-python
-ultralytics
-pyserial
-numpy
+SPI.h
+DMD2.h
+SystemFont5x7.h
